@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 Epic Birthday Surprise! 🎉</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars" id="stars"></div>
+    <div class="balloons" id="balloons"></div>
+    <canvas id="fireworks-canvas"></canvas>
+    
+    <div class="content">
+        <div class="countdown" id="countdown">
+            <h2>🎂 Birthday Countdown 🎂</h2>
+            <div id="timer">00:00:00</div>
+        </div>
+        
+        <h1 id="title">Happy Birthday, [Name]! 🎈</h1>
+        <p>May all your dreams come true this year! ✨💫</p>
+        
+        <div class="photo-frame">
+            <img src="https://via.placeholder.com/300x300/ff6b6b/ffffff?text=Your+Photo" alt="Birthday Photo" id="photo">
+        </div>
+        
+        <div class="controls">
+            <button class="surprise-btn" onclick="launchEpicSurprise()">🚀 Launch Epic Surprise! 🚀</button>
+            <button class="music-btn" id="music-toggle" onclick="toggleMusic()">🔊 Play Music</button>
+            <button class="share-btn" onclick="shareSurprise()">📱 Share Surprise</button>
+        </div>
+    </div>
+    
+    <audio id="bg-music" loop>
+        <source src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav" type="audio/wav"> <!-- Replace with happy-birthday.mp3 -->
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
